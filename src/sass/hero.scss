@@ -1,0 +1,110 @@
+.hero {
+  text-align: center;
+  padding-bottom: 5em;
+  height: 550px;
+  .copy {
+      font-family: 'Roboto', sans-serif;
+      color:#0E2A4B;
+      margin-bottom: 2.5em;
+  }
+ 
+ /* &__image {
+    margin: 0;
+    padding: 0;
+    width: 553px;
+    height: 100%;
+    top:176px;
+    left: 798px;
+  }*/
+  &__image {
+    height: 300px;
+    margin: 0 calc(-1 * var(--wrapperSpace));
+    background: url('../images/desktop.png') center no-repeat;
+    background-size: 345px, cover;
+  }
+  &__imageSrc {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    background-size: cover;
+    min-height: 550px;
+    box-sizing: border-box;
+
+    .copy {
+      font-family: 'Roboto', sans-serif;
+      width: 362px;
+      height: 84px;
+      left: 100px;
+      top: 407px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+      color:#0E2A4B;
+      margin-bottom: 2.5em;
+  }
+
+    &__content {
+        position: relative;
+        display: grid;
+        align-items: center;
+        min-height: 550px;
+        grid-template-areas: "description image";
+        grid-template-columns: 370px 1fr;
+        
+      }
+     /* &__imageSrc {
+        
+        margin-top: -50px;
+        width: 553px;
+        display: block;
+        position: auto;
+        z-index: 1;
+      }
+      &__image {
+        width: 553px;
+        height: 100%;
+        grid-area: image;
+      }*/
+      &__image {
+        grid-area: image;
+    height: 300px;
+    margin: 0 calc(-1 * var(--wrapperSpace));
+    background: url('../images/desktop.png') center no-repeat;
+    background-size: 345px, cover;
+    
+      }
+  }
+  @media screen and (min-width: 1024px){
+    .copy {
+      font-family: 'Roboto', sans-serif;
+      width: 462px;
+      height: 84px;
+      left: 100px;
+      top: 407px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+      color:#0E2A4B;
+      margin-bottom: 2.5em;
+  }
+  &__imageSrc {
+    margin-top: -50px;
+    margin-left: 250px;
+    width: 553px;
+    display: block;
+    position: auto;
+    z-index: 1;
+}
+&__image {
+  grid-area: image;
+  background: none;
+  left: 150px;
+  right: 0;
+  top: 0;
+}
+
+  }
+}

@@ -1,0 +1,38 @@
+.header {
+  padding: 41px ;
+  justify-content: space-between;
+  z-index: 3;
+  width: 100%;
+  background: white;
+  margin-top: -10px;
+
+    &__logo {
+      align-self: center;
+    }
+    .button {
+      display: none;
+    }
+    .button0 {
+      display: none;
+    }
+    &__content {
+      display: flex;
+      justify-content: space-between;
+
+    }
+    @media screen and (min-width: 1024px){
+      .button {
+        display: inline;
+      }
+      .button0 {
+        display: inline;
+      }
+      &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+      }
+    }
+  }
+  

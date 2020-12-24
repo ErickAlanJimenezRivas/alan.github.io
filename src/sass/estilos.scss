@@ -1,0 +1,198 @@
+@import "./header.scss";
+@import "./hero.scss";
+@import "./menu.scss";
+@import "./why.scss";
+@import "./social.scss";
+@import "./fother.scss";
+@import "./overlay.scss";
+@import "./get.scss";
+
+:root{
+  --darkBlue: hsl(233, 26%, 24%);
+  --wrapperSpace: 1.5em;
+}
+
+.wrapper {
+    padding: 0 var(--wrapperSpace);
+    max-width: calc(1115px + 1.5em);
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+body {
+  
+   font-family: 'Kumbh Sans', sans-serif;
+   margin: 0;
+   background: #ffffff;
+   overflow-x: hidden;
+  }
+  .wrapper {
+    padding: 0 var(--wrapperSpace);
+    max-width: calc(1115px + 1.5em);
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+
+
+
+  @mixin title {
+    font-family: 'Roboto', sans-serif;
+    color: #001464;
+    font-style: normal;
+
+    font-size: 2.5em;
+    color: var(--darkBlue);
+    font-weight: 300;
+    line-height: 1.3;
+    margin: 0;
+    margin-bottom: .5em;
+  }
+
+  .title {
+    &__h1 {
+      @include title;
+      font-family: 'Kumbh Sans', sans-serif;
+      color: #001464;
+    }
+    &__h2 {
+      @include title;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 41px;
+      line-height: 64px;
+      color: #1c2b79;
+     
+    }
+    &__h3 {
+      @include title;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 41px;
+      line-height: 64px;
+      color: #18283A;
+      margin-top: 64px;
+    }
+    &__h4 {
+      @include title;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 38px;
+      color: #18283A;
+      margin-top: 60px;
+    }
+  }
+
+  .border{
+    width: 568px;
+    margin-left: 99px;
+    border: 1px solid #EDF0F4;
+  }
+
+
+  @media screen and (min-width: 1024px){
+
+    .title {
+        
+      &__h1 {
+        @include title;
+        font-family: 'Kumbh Sans', sans-serif;
+        color: #001464;
+        width: 568.08px;
+        height: 137px;
+        left: 100px;
+        top: 250px;
+        font-weight: 700;
+        font-size: 55.17px;
+        line-height: 66.21px;
+  
+      }
+      &__h2 {
+        @include title;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 41px;
+        line-height: 64px;
+        color: #1c2b79;
+      }
+      &__h3 {
+        @include title;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 41px;
+        line-height: 64px;
+        color: #18283A;
+        margin-top: 64px;
+      }
+      &__h4 {
+        @include title;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 38px;
+        color: #18283A;
+        margin-top: 60px;
+      }
+    }
+
+    .border{
+      width: 1243px;
+      margin-left: 99px;
+      border: 1px solid #EDF0F4;
+    }
+
+}
+
+
+  .button {
+    border: none;
+    padding: .9em 2.2em;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 4.60904px;
+    color: #ffffff;
+    background: #0958F5;
+  }
+  .button0 {
+    border: 1px solid #0958F5;
+    padding: .9em 2.2em;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 4.60904px;
+    color: #0958F5;
+    background: #ffffff;
+  }
+
+  .button1 {
+    border: none;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-style: normal;
+    padding: .9em 2.2em;
+    font-size: 20.33px;
+    border-radius: 5.64764px;
+    width: 206px;
+    max-height: 56.52px;
+    left: 100px;
+    top: 555px;
+    color: #ffffff;
+    background: #0958F5;
+  }
+
+

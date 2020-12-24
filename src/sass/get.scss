@@ -1,0 +1,51 @@
+.get{
+    background: #ffffff;
+    padding: 50px;
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    height: 265px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+      .content-inputs input{
+        width: 266.67px;
+        margin-bottom: 25.11px;
+        height: 55.47px;
+        line-height: 52px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid rgb(160, 160, 160);
+        box-sizing: border-box;
+        border-radius: 4px;
+
+        }
+        .content-inputs .btn-submit{
+          border: none;
+          font-family: 'Kumbh Sans', sans-serif;
+          font-style: normal;
+          font-size: 20.33px;
+          border-radius: 5.65px;
+          color: #ffffff;
+          background: #0958F5;
+          width: 206px;
+          height: 56.52px;
+      }
+}
+
+@media (max-width: 425px) {
+
+  .get{
+    background: #ffffff;
+    padding: 50px;
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    height: 465px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+    
